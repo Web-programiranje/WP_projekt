@@ -1,0 +1,117 @@
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    height: 1500px;
+}
+.header-dark {
+    background-color: #533916;
+    background-size:cover;
+    padding-bottom:10px;
+}
+
+.header-dark .navbar {
+    background:transparent;
+    padding-top:0;
+    padding-bottom:0;
+    color:#fff;
+    border-radius:0;
+    box-shadow:none;
+    border:none;
+  }
+
+  
+.header-dark .navbar .navbar-brand {
+    font-weight:bold;
+    color:inherit;
+    padding-left: 15%;
+}
+  
+.header-dark .navbar .navbar-brand:hover {
+    color:#f0f0f0;
+}
+  
+.header-dark .navbar .navbar-collapse span {
+    margin-top:5px;
+}
+  
+.header-dark .navbar .navbar-collapse span .login {
+    color:#d9d9d9;
+    margin-right:.5rem;
+    text-decoration:none;
+}
+  
+.header-dark .navbar .navbar-collapse span .login:hover {
+    color:#fff;
+}
+  
+.header-dark .navbar .navbar-toggler {
+    border-color:#747474;
+}
+  
+.header-dark .navbar .navbar-toggler:hover, .header-dark .navbar-toggler:focus {
+    background:none;
+}
+  
+.header-dark .navbar .navbar-toggler {
+    color:#eee;
+}
+ 
+.header-dark .navbar .action-button, .header-dark .navbar .action-button:active {
+    background:#feeddb;
+    border-radius:20px;
+    font-size:inherit;
+    color:#533916;
+    box-shadow:none;
+    border:none;
+    text-shadow:none;
+    padding:.5rem .8rem;
+    transition:background-color 0.25s;
+}
+  
+.header-dark .navbar .action-button:hover {
+    background:#b19e84;
+}
+  
+.header-dark .hero {
+    margin-top:60px;
+}
+  
+.header-dark .hero h1 {
+    color:#fff;
+    font-family:'Bitter', serif;
+    font-size:40px;
+    margin-top:20px;
+    margin-bottom:80px;
+}
+#navcol-1 span{
+    margin-top: 5px;
+    padding-left: 60% ;
+}
+
+nav{
+    background-color: #897464;
+    padding-left: 20%;
+    padding-right: 20%;
+
+}
+main{
+    background-color: #fff;
+    padding-top: 50px;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+    min-height: 1200px;
+}
+
+footer{
+    padding: 10px 20%;
+    background-color: #583523;
+    color: #EDDCD2;
+    margin-top: auto;
+}
+i{
+    font-size: 20px;
+    padding: 10px;
+}
