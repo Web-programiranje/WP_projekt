@@ -2,19 +2,17 @@
     include_once "header.php"
 ?>
     <main>
-        <p id="uvod"></p>
-        <p id="first"></p>
-        <p id="second"></p>
-        <p id="third"></p>
-        <p>a</p>
-        <p>b</p>
-        <p>c</p>
-        <p>d</p>
-        <p>e</p>
-        <p>f</p>
-        <p>g</p>
-        <p>h</p>
-        
+        <?php
+            $servername = "localhost";
+            $dbname = "coffee_shops";
+            $conn = new PDO("mysql:host=$servername;dbname=$dbname","root","");
+            $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            $stmt = $conn->prepare("SELECT * FROM shops;");
+            $stmt->execute();
+            $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+            var_dump($result);
+
+        ?>
     </main>
     
 <?php
