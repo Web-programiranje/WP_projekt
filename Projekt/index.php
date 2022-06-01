@@ -3,15 +3,35 @@
 ?>
     <main>
         <?php
-            $servername = "localhost";
-            $dbname = "coffee_shops";
-            $conn = new PDO("mysql:host=$servername;dbname=$dbname","root","");
+            $conn = new PDO('mysql:host=localhost;dbname=coffee_shops',"root","");
             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            $stmt = $conn->prepare("SELECT * FROM shops;");
+            $stmt = $conn->prepare('SELECT * FROM shops;');
             $stmt->execute();
-            $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
-            var_dump($result);
-
+            $shops = $stmt->fetchAll();
+            $i=1;
+            foreach($shops as $shop){
+        ?>
+        <article class="m-5">
+            <h2  class="text-center">
+                <?php
+                    echo $i;
+                    echo ". ";
+                    echo $shop["shops_name"];
+                 ?>
+            </h2>
+            <p  class="text-justify m-3">
+                <?php
+                    echo $shop["shops_description"];
+                ?>
+            </p>
+            <div class="text-center">
+                <img src="<?php echo $shop["shops_image"]?>" alt="Coffee shop image" width="500" height="500">
+            </div>
+            
+        </article>
+        <?php
+            $i++;
+            }
         ?>
     </main>
     
