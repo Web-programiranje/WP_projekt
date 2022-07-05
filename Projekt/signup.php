@@ -7,27 +7,25 @@
             <form action="includes/signup.include.php" method="post">
                 <div class="form-group mb-3">
                     <label for="uname" class="form-label">USERNAME</label>
-                    <input type="text" class="form-control" name ="uname" placeholder="">
-            
+                    <input type="text" class="form-control" name ="uname">
                 </div>
                 <div class="form-group mb-3">
                     <label for="email" class="form-label"> EMAIL</label>
-                    <input type="email" class="form-control" name="email" placeholder="">
+                    <input type="email" class="form-control" name="email">
                 </div>
                 <div class="form-group mb-3">
                     <label for="password" class="form-label">PASSWORD</label>
-                    <input type="password" class="form-control" name="password" placeholder="">
+                    <input type="password" class="form-control" name="password">
                 </div>
                 <div class="form-group mb-3">
                     <label for="cpassword" class="form-label">CONFIRM PASSWORD</label>
-                    <input type="password" class="form-control" name="cpassword" placeholder="">
+                    <input type="password" class="form-control" name="cpassword">
                 </div>   
                 <button type="submit" name="submit" class="btn btn-outline-dark">SIGN UP</button>
                                  
             </form>
         </div>
-    </main>
-    
+    </main>   
     
 <?php
     include_once "footer.php"

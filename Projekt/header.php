@@ -26,7 +26,7 @@
                                 if(isset($_SESSION["userid"])) {
                             ?>
                                 <li class="nav-item">
-                                    <a class="nav-link btn action-button" role="button" href="#" onmouseover="mOver(this)" onmouseout="mOut(this)"><?php echo $_SESSION["useruname"];?></a>
+                                    <a class="nav-link btn action-button" role="button" href="profile.php" onmouseover="mOver(this)" onmouseout="mOutUser(this)"><?php echo $_SESSION["useruname"];?></a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link btn action-button" role="button" href="includes/logout.include.php" onmouseover="mOver(this)" onmouseout="mOut(this)">Log out</a>
@@ -57,6 +57,6 @@
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top" >
         <div class="container-fluid ">
             <a class="navbar-brand pages" href="index.php">Coffee shops</a>
-            <a class="navbar-brand pages" href="#">User recommendations</a>
+            <a class="navbar-brand pages" href="userrecom.php">User recommendations</a>
         </div>
     </nav>
