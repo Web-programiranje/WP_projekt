@@ -11,7 +11,7 @@
   <dd> - Stranica za registraciju</dd>
   <dd> - Stranica za prijavu</dd>
   
-<h3>Ako korisnik nije prijavljen:</h3>
+<h3>Ako je korisnik prijavljen:</h3>
   <dt> - Početna stranica s top 10 kafića u svijetu</dt>
   <dd> - Stranica s predloženim kafićima od strane drugih korisnika s mogućnosti dodavanja vlastitih prijedloga</dd>
   <dd>&emsp; - Stranica za dodavanja vlastitog prijedloga kafića</dd>
