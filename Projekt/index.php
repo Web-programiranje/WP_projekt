@@ -25,7 +25,7 @@
                 ?>
             </p>
             <div class="text-center">
-                <img src="<?php echo $shop["shops_image"]?>" alt="Coffee shop image" width="500" height="500">
+                <img class="img-fluid" src="<?php echo $shop["shops_image"]?>" alt="Coffee shop image" width="94%">
             </div>
             
         </article>
